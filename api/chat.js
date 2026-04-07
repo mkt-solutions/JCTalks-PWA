@@ -1,3 +1,6 @@
 export default async function handler(req, res) {
   res.status(200).json({ reply: "teste funcionando" });
 }
+await fetch("/api/chat", {
+  method: "POST"
+});
